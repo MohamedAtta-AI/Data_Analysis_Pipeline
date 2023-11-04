@@ -7,4 +7,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     # Invoke next file in pipeline, sending it the dataset path
-    subprocess.run(['python', 'dpre.py', args.path])
+    subprocess.run(['python3', 'dpre.py', args.path])

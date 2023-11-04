@@ -38,4 +38,4 @@ get_stats()
 marital_stats()
 
 # Invoke next file
-subprocess.run(['python', 'vis.py'])
+subprocess.run(['python3', 'vis.py'])

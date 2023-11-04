@@ -91,4 +91,4 @@ df = pd.read_csv(sys.argv[1], sep='\t')
 df_encoded , df_scaled = preprocess_and_save()
 #==========================================================================
 # Invoke the next file
-subprocess.run(['python', 'eda.py', sys.argv[1]])
+subprocess.run(['python3', 'eda.py', sys.argv[1]])

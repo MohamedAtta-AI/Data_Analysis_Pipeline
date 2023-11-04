@@ -13,6 +13,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
+import subprocess
 
 # Load the processed dataset
 df_encoded = pd.read_csv('res_dpre.csv')

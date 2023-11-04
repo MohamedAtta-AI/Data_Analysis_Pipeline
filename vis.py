@@ -21,3 +21,6 @@ plt.grid(True)
 
 # Save the figure
 plt.savefig('vis.png', bbox_inches='tight')
+
+# Invoke next file
+subprocess.run(['python3', 'model_.py'])

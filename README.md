@@ -30,7 +30,7 @@ Then run the container with:
 
 Copy all the python files into the container:
 
-`
+```
 docker cp load.py bd-a1:home/doc-bd-a1
 
 docker cp dpre.py bd-a1:home/doc-bd-a1
@@ -40,7 +40,7 @@ docker cp eda.py bd-a1:home/doc-bd-a1
 docker cp vis.py bd-a1:home/doc-bd-a1
 
 docker cp model_.py bd-a1:home/doc-bd-a1
-`
+```
 
 Now, you can start the pipeline:
 

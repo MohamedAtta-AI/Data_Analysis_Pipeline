@@ -20,9 +20,19 @@ This is an exercise to practice the real-world data science operational flow.
 **Note:** Each one of these files automatically invokes the next one.
 
 # Getting Started
-Run the docker container then go into the analysis directory and run the following command
+After cloning the repository, open the command terminal and navigate to it then build the image:
+
+`docker build -t <image_name> .`
+
+Then run the container with:
+
+`docker run -it --name <container_name> <image_name>`
+
+Finally, start the pipeline:
 
 `python3 load.py <dataset_path>`
+
+The analysis results will appear on your local machine inside `/service-results/` and the container will close itself
 
 ## Customer Personality Analysis Dataset Documentation
 **Kaggle link:** https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis

@@ -19,18 +19,36 @@ This is an exercise to practice the real-world data science operational flow.
 
 **Note:** Each one of these files automatically invokes the next one.
 
-# Getting Started
+# Usage guide
 After cloning the repository, open the command terminal and navigate to it then build the image:
 
-`docker build -t <image_name> .`
+`docker build -t bd-a1 .`
 
 Then run the container with:
 
-`docker run -it --name <container_name> <image_name>`
+`docker run -it --name bd-a1 bd-a1`
 
-Finally, start the pipeline:
+Copy all the python files into the container:
+
+`
+docker cp load.py bd-a1:home/doc-bd-a1
+
+docker cp dpre.py bd-a1:home/doc-bd-a1
+
+docker cp eda.py bd-a1:home/doc-bd-a1
+
+docker cp vis.py bd-a1:home/doc-bd-a1
+
+docker cp model_.py bd-a1:home/doc-bd-a1
+`
+
+Now, you can start the pipeline:
 
 `python3 load.py <dataset_path>`
+
+Finally, open git bash and navigate to the repository and run:
+
+`bash final.sh`
 
 The analysis results will appear on your local machine inside `/service-results/` and the container will close itself
 
